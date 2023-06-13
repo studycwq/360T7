@@ -3,11 +3,11 @@
 # Copyright (c) 2023 @weigefenxiang
 #
 
-#- name: 替换默认主题 luci-theme-argon
-sed -i 's/luci-theme-bootstrap/luci-theme-argon/' feeds/luci/collections/luci/Makefile
+#- name: 替换默认主题 luci-theme-design
+sed -i 's/luci-theme-bootstrap/luci-theme-design/' feeds/luci/collections/luci/Makefile
 
-# 默认ip 192.168.1.1
-sed -i 's/192.168.[0-9]\{1,3\}.1/192.168.1.1/g' package/base-files/files/bin/config_generate
+# 默认ip 192.168.68.1
+sed -i 's/192.168.[0-9]\{1,3\}.1/192.168.68.1/g' package/base-files/files/bin/config_generate
 
 # 修改时区 UTF-8
 sed -i 's/UTC/CST-8/g'  package/base-files/files/bin/config_generate
