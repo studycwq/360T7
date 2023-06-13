@@ -24,8 +24,8 @@ on:
   push:
     paths:
       - '.github/workflows/360T7.yml'
-  schedule:
-    - cron: '0 4 * * 5'
+#  schedule:
+#    - cron: '0 4 * * 5'
 
 jobs:
   Config:
